@@ -12,7 +12,7 @@ st.set_page_config(
     page_icon="🤖",
     layout="centered",
 )
-st.title("💬 Generative AI Chatbot")
+st.title("💬 Ishara AI Chatbot ")
 
 # initiate chat history
 if "chat_history" not in st.session_state:
@@ -30,7 +30,7 @@ llm = ChatGroq(
 )
 
 # input box
-user_prompt = st.chat_input("Ask Chatbot...")
+user_prompt = st.chat_input("Ask to your assistant...")
 
 if user_prompt:
     st.chat_message("user").markdown(user_prompt)
